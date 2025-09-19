@@ -42,3 +42,5 @@ logSchema.index({ action: 1 });
 logSchema.index({ severity: 1 });
 
 module.exports = mongoose.model('Log', logSchema);
+
+

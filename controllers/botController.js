@@ -139,6 +139,17 @@ class BotController {
       next(error);
     }
   }
+
+  // Get all commands
+  static async getCommands(req, res, next) {
+    try {
+      const commands = await Command.find().sort({ created_at: -1 });
+      res.json(commands);
+    } catch (error) {
+      next(error);
+    }
+  }
 }
 
 module.exports = BotController;
+

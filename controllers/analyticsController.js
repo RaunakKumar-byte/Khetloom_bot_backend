@@ -151,3 +151,5 @@ class AnalyticsController {
 }
 
 module.exports = AnalyticsController;
+
+

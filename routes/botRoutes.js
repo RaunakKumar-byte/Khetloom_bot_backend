@@ -5,6 +5,7 @@ const { validateCoordinates, validateRefillRequest } = require('../middleware/va
 
 // Bot status routes
 router.get('/status', BotController.getStatus);
+router.get('/commands', BotController.getCommands);
 
 // Bot control routes
 router.post('/move', validateCoordinates, BotController.moveBot);
@@ -13,3 +14,4 @@ router.post('/emergency-stop', BotController.emergencyStop);
 router.post('/refill', validateRefillRequest, BotController.refillResources);
 
 module.exports = router;
+

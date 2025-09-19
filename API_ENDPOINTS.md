@@ -394,3 +394,5 @@ curl http://localhost:3001/api/logs/fertilizer
 - 4 Plant management endpoints
 - 4 Log management endpoints
 - 3 Analytics endpoints
+
+

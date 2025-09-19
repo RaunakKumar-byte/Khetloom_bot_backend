@@ -43,3 +43,5 @@ const commandSchema = new mongoose.Schema({
 commandSchema.index({ status: 1, created_at: 1 });
 
 module.exports = mongoose.model('Command', commandSchema);
+
+

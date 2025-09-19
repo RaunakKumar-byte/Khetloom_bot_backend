@@ -8,3 +8,5 @@ router.get('/performance', AnalyticsController.getPerformanceMetrics);
 router.get('/efficiency', AnalyticsController.getBotEfficiency);
 
 module.exports = router;
+
+

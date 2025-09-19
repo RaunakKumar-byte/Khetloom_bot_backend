@@ -48,3 +48,5 @@ plantSchema.index({ x: 1, y: 1 }, { unique: true });
 plantSchema.index({ health: 1 });
 
 module.exports = mongoose.model('Plant', plantSchema);
+
+
